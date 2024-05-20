@@ -1,7 +1,8 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container, Content } from "./styles";
 import ContentHeader from "../../components/ContentHeader";
 import SelectInput from "../../components/SelectInput";
+import HistoryFinanceCard from "../../components/HistoryFinanceCard";
 
 const List: React.FC = () => {
   const options = [
@@ -20,6 +21,78 @@ const List: React.FC = () => {
       <ContentHeader title="List" lineColor="#fff">
         <SelectInput options={options} />
       </ContentHeader>
+      <Content>
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+      </Content>
     </Container>
   );
 };
