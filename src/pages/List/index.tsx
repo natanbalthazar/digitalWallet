@@ -92,6 +92,34 @@ const List: React.FC = () => {
           subtitle="20/05/2024"
           amount="R$ 130,00"
         />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
+        <HistoryFinanceCard
+          cardColor="blue"
+          tagColor="red"
+          title="Conta de Luz"
+          subtitle="20/05/2024"
+          amount="R$ 130,00"
+        />
       </Content>
     </Container>
   );
