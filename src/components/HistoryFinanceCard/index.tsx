@@ -5,7 +5,6 @@ import { Container, Tag } from "./styles";
 // Passa as propriedades que o componente irá exigir para ser exibido na tela
 // É onde declaramos
 interface IHistoryFinanceCardProps {
-  cardColor: string;
   tagColor: string;
   title: string;
   subtitle: string;
@@ -14,14 +13,13 @@ interface IHistoryFinanceCardProps {
 
 // É onde trazemos as propriedades para serem usadas dentro do Component
 const HistoryFinanceCard: React.FC<IHistoryFinanceCardProps> = ({
-  cardColor,
   tagColor,
   title,
   subtitle,
   amount,
 }) => {
   return (
-    <Container color={cardColor}>
+    <Container>
       <Tag color={tagColor} />
       <div>
         <span>{title}</span>
