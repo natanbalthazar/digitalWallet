@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Container, Content, Filters } from "./styles";
 import ContentHeader from "../../components/ContentHeader";
 import SelectInput from "../../components/SelectInput";
 import HistoryFinanceCard from "../../components/HistoryFinanceCard";
+import { useParams } from "react-router-dom";
 
 const List: React.FC = () => {
+  // Desestruturando: fazemos isso para pegar o nome do parâmetro direto.
+  const { type } = useParams();
+
+  const info = useMemo(() => {
+    return type === "entry-balance"
+      ? { title: "Entradas", $lineColor: "#F7931B" }
+      : { title: "Saídas", $lineColor: "#E44C4E" };
+  }, [type]); // Ao colocar ele aqui, criamos uma dependência, verificando o type novamente. Caso não seja colocado, ele executará apenas 1 vez.
+
   const months = [
     {
       value: 1,
@@ -73,7 +83,7 @@ const List: React.FC = () => {
 
   return (
     <Container>
-      <ContentHeader title="List" lineColor="#fff">
+      <ContentHeader title={info.title} $lineColor={info.$lineColor}>
         <SelectInput options={months} />
         <SelectInput options={years} />
       </ContentHeader>
